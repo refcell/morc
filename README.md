@@ -17,10 +17,9 @@
 [Docs-rs]: https://docs.rs/morc/
 [Docs]: https://img.shields.io/docsrs/morc.svg?color=319e8c&label=docs.rs
 
-
 **Dead simple, minimal markdown generator library written in Rust.** Morc is in https://github.com/refcell/morc/labels/beta.
 
-![](./etc/banner.png)
+![](https://raw.githubusercontent.com/refcell/morc/main/etc/banner.png)
 
 **[Install](#usage)**
 | [User Docs](#what-is-morc)
@@ -48,7 +47,18 @@ cargo add morc
 A short example to generate markdown with `morc` is shown below.
 
 ```rust
-// todo
+use morc::core::{Document, Header, Section, Validate};
+
+fn main() {
+    let doc = Document {
+        sections: vec![Box::new(Section {
+            header: Some(Header::new(1, "Hello".to_string())),
+            body: None,
+            subsections: vec![],
+        })],
+    };
+    assert!(doc.validate());
+}
 ```
 
 ## Contributing
