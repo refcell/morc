@@ -17,7 +17,7 @@
 [Docs-rs]: https://docs.rs/morc/
 [Docs]: https://img.shields.io/docsrs/morc.svg?color=319e8c&label=docs.rs
 
-**Dead simple, minimal markdown generator library written in Rust.** Morc is in https://github.com/refcell/morc/labels/beta.
+**Dead simple, minimal markdown generator library written in Rust.** Morc is in https://github.com/refcell/morc/labels/beta
 
 ![](https://raw.githubusercontent.com/refcell/morc/main/etc/banner.png)
 
